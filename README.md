@@ -40,7 +40,7 @@ local/ttrss-updater               latest      8760f455537b   5 minutes ago      
 local/ttrss-app                   latest      ad22edabf9ef   7 minutes ago 
 ```
 
-** Development is still occurring at this point.  Below cannot be used yet. **
+**Development is still occurring at this point.  Below cannot be used yet.**
 
 ## Installation
 
