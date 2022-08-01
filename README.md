@@ -1,9 +1,20 @@
-<h1>TTRSS on K3S Kubernetes Raspberry Pi 4 cluster</h1>
+This is currently a work-in-progress.  This does not yet result in a working instance of TT-RSS (packetgeek, 1 Aug 2022).
 
+# TTRSS on K3S Kubernetes Ryzen-based mini pc, with NFS-based persistence
+
+This is for my own education and personal use.  Please refer to Antonio Correia's code if you're attempting similar (I do horrible things to other people's code).
+
+## My rig
+I'm running a Minikube node on a Coofun mini-PC.  It's running Ubuntu Server 22.04 (no GUI).  It's configured with NFS-based persistence (a departure from Mr. Correia's configuration).  My intent is to track various feeds on Medium, as well as other, more "normal", RSS feeds.
+
+## Installation
+
+Once you have the containers built and stored in a local repo, the following should install TT-RSS in your K8S node.
 This command should install TTRSS successfully on a kubernetes cluster
 ```
 kubectl apply -f .
 ```
+## From Mr. Correia's page 
 
 Since kubernetes cannot build the containers to run in the pods, I had to build them manually from the official docker-compose repository.
 
