@@ -7,7 +7,7 @@ This is for my own education and personal use.  Please refer to Antonio Correia'
 ## My rig
 I'm running a Minikube node on a Coofun mini-PC.  It's running Ubuntu Server 22.04 (no GUI).  It's configured with NFS-based persistence (a departure from Mr. Correia's configuration).  My intent is to track various feeds on Medium, as well as other, more "normal", RSS feeds.
 
-# Steps
+# Steps - Creating the images
 
 1) Grab a copy of the code navigate into the folder for the app container:
 ```
