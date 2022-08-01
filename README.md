@@ -40,6 +40,27 @@ local/ttrss-updater               latest      8760f455537b   5 minutes ago      
 local/ttrss-app                   latest      ad22edabf9ef   7 minutes ago 
 ```
 
+5) Retag each image so that the private hosts IP and port are part of the tag name.  This can be done via:
+```
+docker images
+docker tag 745db2243c8f 192.168.2.105:5000/local/ttrss-web_nginx
+```
+6) Perform Step #5 on the other two images.  Now running "docker images" should show something like:
+```
+192.168.2.105:5000/local/ttrss-web_nginx   latest      745db2243c8f   12 hours ago   23.5MB
+local/ttrss-web_nginx                      latest      745db2243c8f   12 hours ago   23.5MB
+192.168.2.105:5000/local/ttrss-updater     latest      8760f455537b   12 hours ago   92.6MB
+local/ttrss-updater                        latest      8760f455537b   12 hours ago   92.6MB
+192.168.2.105:5000/local/ttrss-app         latest      ad22edabf9ef   12 hours ago   92.6MB
+local/ttrss-app                            latest      ad22edabf9ef   12 hours ago   92.6MB
+```
+7) Push the image to the local registry via:
+```
+docker push 192.168.2.105:5000/local/ttrss-app
+```
+
+8) Perform step #7 for the other two images.
+
 **Development is still occurring at this point.  Below cannot be used yet.**
 
 ## Installation
