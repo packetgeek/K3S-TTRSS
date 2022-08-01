@@ -19,7 +19,7 @@ cd K3S-TTRSS/Containers/app
 ```
 docker build -t local/ttrss-app .
 ```
-Note the "space period" at the end of the above.
+    Note the "space period" at the end of the above.
 
 3) Perform similar for the updater, via:
 ```
