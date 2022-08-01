@@ -27,6 +27,20 @@ cd ../updater
 docker build -t local/ttrss-updater .
 ```
 
+4) Perform similar for the nginx container, via:
+```
+cd ../web-nginx
+docker build -t local/ttrss-web_nginx
+```
+You should now have three images built.  Running "docker images" should show something like:
+```
+REPOSITORY                        TAG         IMAGE ID       CREATED              SIZE
+local/ttrss-web_nginx             latest      745db2243c8f   About a minute ago   23.5MB
+local/ttrss-updater               latest      8760f455537b   5 minutes ago        92.6MB
+local/ttrss-app                   latest      ad22edabf9ef   7 minutes ago 
+```
+
+
 ## Installation
 
 Once you have the containers built and stored in a local repo, the following should install TT-RSS in your K8S node.
