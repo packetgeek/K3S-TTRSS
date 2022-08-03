@@ -79,6 +79,7 @@ docker push 192.168.2.105:5000/local/ttrss-app
 **Development is still occurring at this point.  Below cannot be used yet.**
 
 **** need to edit the pvc files next ***
+**** need to file a bug with Mr. Correia about two imagepullpolicy lines in his db manifest ***
 
 
 ## Installation
