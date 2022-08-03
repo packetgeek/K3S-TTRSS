@@ -4,7 +4,12 @@ This is currently a work-in-progress.  This does not yet result in a working ins
 
 This is for my own education and personal use.  Please refer to Antonio Correia's code if you're attempting similar (I do horrible things to other people's code).
 
+## Assumptions
+
+- In the below, 192.168.2.105 is the IP address of my private Docker registry.
+
 ## My rig
+
 I'm running a Minikube node on a Coofun mini-PC.  It's running Ubuntu Server 22.04 (no GUI).  It's configured with NFS-based persistence (a departure from Mr. Correia's configuration).  My intent is to track various feeds on Medium, as well as other, more "normal", RSS feeds.
 
 # Steps - Creating the images
@@ -62,6 +67,8 @@ docker push 192.168.2.105:5000/local/ttrss-app
 8) Perform step #7 for the other two images.
 
 9) Push all three images to your local registry.
+
+*** in the following, suggest changing imagePullPolicy from Always to IfNotPresent ***
 
 10) Edit the ttrss-app.yml file and, in the "image:" line, replace "ajvcorreia/ttrss-app" with "192.168.2.105:5000/local/ttrss-app"
 
