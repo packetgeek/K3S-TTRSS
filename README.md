@@ -1,6 +1,6 @@
 This is currently a work-in-progress.  This does not yet result in a working instance of TT-RSS (packetgeek, 1 Aug 2022).
 
-# TTRSS on K3S Kubernetes Ryzen-based mini pc, with NFS-based persistence
+# TTRSS in Minikube, on a Ryzen-based mini-PC, with NFS-based persistence
 
 This is for my own education and personal use.  Please refer to Antonio Correia's code if you're attempting similar (I do horrible things to other people's code).
 
