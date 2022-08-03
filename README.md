@@ -61,7 +61,18 @@ docker push 192.168.2.105:5000/local/ttrss-app
 
 8) Perform step #7 for the other two images.
 
+9) Push all three images to your local registry.
+
+10) Edit the ttrss-app.yml file and, in the "image:" line, replace "ajvcorreia/ttrss-app" with "192.168.2.105:5000/local/ttrss-app"
+
+11) Edit the ttrss-nginx.yml file and, in the "image:" line, replace "ajvcorreia/ttrss-web_nginx" with "192.168.2.105:5000/local/ttrss-web_nginx"
+
+12) Edit the ttrss-updater.yml file and, in the "image:" line, replace "ajvcorreia/ttrss-updater" with "192.168.2.105:5000/local/ttrss-updater"
+
 **Development is still occurring at this point.  Below cannot be used yet.**
+
+**** need to edit the pvc files next ***
+
 
 ## Installation
 
