@@ -76,9 +76,15 @@ docker push 192.168.2.105:5000/local/ttrss-app
 
 12) Edit the ttrss-updater.yml file and, in the "image:" line, replace "ajvcorreia/ttrss-updater" with "192.168.2.105:5000/local/ttrss-updater"
 
+13) Edit ttrss-app-pvc.yml and change "loghorn" to "stadard".
+
+14) Edit ttrss-db-pvc.yml and change "longhorn" to "standard".
+
+
 **Development is still occurring at this point.  Below cannot be used yet.**
 
 **** need to edit the pvc files next ***
+
 **** need to file a bug with Mr. Correia about two imagepullpolicy lines in his db manifest ***
 
 
