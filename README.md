@@ -80,10 +80,11 @@ docker push 192.168.2.105:5000/local/ttrss-app
 
 14) Edit ttrss-db-pvc.yml and change "longhorn" to "standard".
 
+15) Add the pv sections to both of the pvc files.
 
 **Development is still occurring at this point.  Below cannot be used yet.**
 
-**** need to edit the pvc files next ***
+*** test the build ***
 
 **** need to file a bug with Mr. Correia about two imagepullpolicy lines in his db manifest ***
 
