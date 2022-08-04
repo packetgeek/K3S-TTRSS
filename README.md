@@ -82,6 +82,10 @@ docker push 192.168.2.105:5000/local/ttrss-app
 
 15) Add the pv sections to both of the pvc files.
 
+16) Before testing the build, be sure that the following conditions are met:
+* the local registry is turned on
+* ttrss-config.yml has been edited
+
 **Development is still occurring at this point.  Below cannot be used yet.**
 
 *** test the build ***
